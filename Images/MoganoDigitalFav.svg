@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Extra padding built in -->
+  <circle cx="256" cy="256" r="190"
+          fill="none"
+          stroke="#1F4E79"
+          stroke-width="36"/>
+
+  <!-- Extra-bold M for small sizes -->
+  <path d="M170 340 V180 L256 285 L342 180 V340"
+        fill="none"
+        stroke="#1F4E79"
+        stroke-width="48"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
