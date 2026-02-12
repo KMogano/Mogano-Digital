@@ -4,110 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Get in touch with Mogano Digital for web design, branding, printing, and apparel services. Based in Gauteng, serving South Africa.">
-    <link rel="stylesheet" href="">
-    <link rel="shortcut icon" href="../Images/MoganoDigitalFav(Wht).svg" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <script src="../JavaScript/main.js"></script>
+    <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zoho.com/widget?wc=siq21d25e4a847e1f3dccd1cbeb1df426be62403108fa77004ca926d7afd3d171c5" defer></script>
+    <link rel="icon" href="../Images/MoganoDigitalFav(Wht).svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="../Images/MoganoDigitalFav.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
     <title>Contact | Mogano Digital</title>
 </head>
 <body>
-    <header>
-        <a href="#hero_section"><img src="../Images/MoganoDigitalLogo(Blue).svg" alt="Mogano Digital Logo"></a>
-        <ul>
-            <li><a href="#hero_section">Home</a></li>
-            <li><a href="./HTML/about.html">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="./HTML/pricing.html">Pricing</a></li>
-            <li><a href="./HTML/portfolio.html">Portfolio</a></li>
-            <li><a href="./HTML/contact.html">Contact</a></li>
-        </ul>
+    <header id="main_header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <span class="logo_wrap">
+                        <img src="../Images/MoganoDigitalLogo(Blue).svg" alt="Mogano Digital Logo" class="defaul_logo">
+                        <img src="../Images/MoganoDigitalLogo(Wht).svg" alt="Mogano Digital Logo" class="logo_scrolled">
+                </span>
+                </a>
+            </div>
+
+            <button id="menu_toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../HTML/about.html">About</a></li>
+                    <li class="has-dropdown"><a href="#">Services <b>▾</b></a>
+                        <ul class="dropdown">
+                            <li><a href="../HTML/web-dev-design.html">Digital & Web</a></li>
+                            <li><a href="../HTML/graphic-design-branding.html">Design & Branding</a></li>
+                            <li><a href="../HTML/print-physical-apparel.html">Print & Production</a></li>
+                            <li><a href="../HTML/print-physical-apparel.html">Apparel & Promotions</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="../HTML/portfolio.html">Portfolio</a></li> -->
+                    <li><a href="#" id="current">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="contact-section">
-    <div class="contact-container">
-        
-        <div class="contact-form">
-            <h2>Send a Message</h2>
-            <p>Ready to build? Tell us about your project.</p>
-            <form action="#" method="POST">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="number" name="phone" placeholder="Phone Number" required>
-                <select name="service" required>
-                    <option value="" disabled selected>Select Service</option>
-                    <option value="web">Web Development</option>
-                    <option value="branding">Graphic Design & Branding</option>
-                    <option value="apparel">Print & Apparel</option>
-                </select>
-                <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
-                
-                <div class="popia-notice">
-                    <input type="checkbox" id="popia" required>
-                    <label for="popia">I consent to the processing of my data in accordance with the POPIA policy.</label>
+    <section id="contact-section">
+        <div class="container">
+            <div class="contact-form">
+                <h3>Make Appointment</h3>
+                <p>Ready to build? Tell us about your project.</p>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Full Name" required><br>
+                    <input type="email" name="email" placeholder="Email" required><br>
+                    <input type="number" name="phone" placeholder="Phone Number" required><br>
+                    <select name="service" required>
+                        <option value="" disabled selected>Select Service</option>
+                        <option value="web">Web Development</option>
+                        <option value="branding">Graphic Design & Branding</option>
+                        <option value="apparel">Print & Apparel</option>
+                    </select><br>
+                    <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                    
+                    <div class="popia-notice">
+                        <input type="checkbox" id="popia" required>
+                        <label for="popia">I consent to the processing of my data in accordance with the POPIA policy.</label>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+
+            <hr>
+
+            <div class="contact-info">
+                <div class="info-box">
+                    <h3>Contact Details</h3>
+                    <p><strong>WhatsApp:</strong><a href="https://wa.me/27663085128"> 066 308 5128</a></p>
+                    <p><strong>Email:</strong><a href="mailto:info@moganodigital.co.za"> info@moganodigital.co.za</a></p>
+                    <p><strong>Location:</strong> Gauteng, South Africa</p>
                 </div>
                 
-                <button type="submit" class="btn-submit">Send Message</button>
-            </form>
-        </div>
-
-        <div class="contact-info">
-            <div class="info-box">
-                <h3>Contact Details</h3>
-                <p><strong>Email:</strong> info@moganodigital.co.za</p>
-                <p><strong>Location:</strong> Gauteng, South Africa</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.915747766508!2d28.119410522656366!3d-25.97080337997361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956e2c31dc3e8b%3A0xd511eb9654e91c5d!2sSan%20Ridge%20Heights%20Apartments%20-%20Central%20Developments!5e0!3m2!1sen!2sza!4v1768665493647!5m2!1sen!2sza" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                </div>
             </div>
             
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.915747766508!2d28.119410522656366!3d-25.97080337997361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956e2c31dc3e8b%3A0xd511eb9654e91c5d!2sSan%20Ridge%20Heights%20Apartments%20-%20Central%20Developments!5e0!3m2!1sen!2sza!4v1768665493647!5m2!1sen!2sza" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-            </div>
         </div>
-        
-    </div>
-</section>
+    </section>
 
     <footer>
-        <div id="boxes">
-            <div class="box1">
-                <img src="../Images/MoganoDigitalLogo(Wht).svg" alt="">
-                <p>Professional digital, print, and branding solutions for ambitious organizations.</p>
-                <div class="socials">
-                    <img src="" alt="">
-                    <img src="" alt="">
+        <div class="container">
+            <div id="boxes">
+                <div class="box1">
+                    <a href="../index.html"><img src="../Images/MoganoDigitalLogo(Wht).svg" alt="" class="logo"></a>
+                    <p>Professional digital, print, and branding solutions for ambitious organizations.</p>
+                </div>
+
+                <div class="box2">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../HTML/about.html">About Us</a></li>
+                        <li><a href="../HTML/services.html">Services</a></li>
+                        <!-- <li><a href="../HTML/portfolio.html">Our Portfolio</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="box3">
+                    <h4>Core Services</h4>
+                    <ul>
+                        <li><a href="../HTML/web-dev-design.html">Web Design & Development</a></li>
+                        <li><a href="../HTML/print-physical-apparel.html">Print & Production</a></li>
+                        <li><a href="../HTML/graphic-design-branding.html">Corporate Branding</a></li>
+                        <li><a href="../HTML/print-physical-apparel.html">Apparel & Branding</a></li>
+                    </ul>
+                </div>
+
+                <div class="box4">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><ion-icon name="logo-whatsapp"></ion-icon><a href="https://wa.me/27663085128">066 308 5128</a></li>
+                        <!-- <li><ion-icon name="call"></ion-icon><a href="tel:+27 10111">10111</a></li> -->
+                        <li><ion-icon name="mail"></ion-icon><a href="mailto:info@moganodigital.co.za">info@moganodigital.co.za</a></li>
+                        <li><ion-icon name="location-sharp"></ion-icon>Gauteng</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="box2">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Our Portfolio</a></li>
-                </ul>
-            </div>
-
-            <div class="box3">
-                <h4>Core Services</h4>
-                <ul>
-                    <li><a href="">Web Design & Development</a></li>
-                    <li><a href="">Print & Production</a></li>
-                    <li><a href="">Corporate Branding</a></li>
-                    <li><a href="">Apparel & Branding</a></li>
-                </ul>
-            </div>
-
-            <div class="box4">
-                <h4>Contact Info</h4>
-                <ul>
-                    <li>Location</li>
-                    <li>Email</li>
-                    <li>WhatsApp</li>
-                </ul>
+            <div class="legal">
+                <p>&commat; 2026 Mogano Digital. All Rights Reserved</p>
             </div>
         </div>
 
-        <div class="legal">
-            <p>&commat; 2026 Mogano Digital. All Rights Reserved</p>
+        <div id="mobile">
+            <a href="../index.html"><img src="../Images/MoganoDigitalLogo(Wht).svg" alt="" class="logo"></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/about.html">About Us</a></li>
+                <li><a href="../HTML/services.html">Services</a></li>
+                <!-- <li><a href="../HTML/portfolio.html">Our Portfolio</a></li> -->
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="legal">
+                <p>&commat; 2026 Mogano Digital. All Rights Reserved</p>
+            </div>
         </div>
     </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

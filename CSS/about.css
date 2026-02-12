@@ -186,16 +186,47 @@ header .container {
 }
 
 nav ul {
+    position: relative;
     margin-top: 35px;
     display: flex;
-    gap: 35px;
+    gap: 55px;
 }
 
 nav li {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    color: #e9edf2;
+    color: #e9edf2; */
+    position: relative;
+}
+
+nav ul li .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    width: 230px;
+    background: #7e7f7eec;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 5px;
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+nav ul li.open > .dropdown {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    margin-top: 37px;
+    color: var(--primary-tint);
+}
+
+nav ul li.open > .dropdown a {
+    color: var(--primary-tint);
 }
 
 nav li a {
@@ -214,7 +245,7 @@ nav li a#current {
 
 header.scrolled {
     background-color: var(--primary-base);
-    height: 80px;
+    height: 70px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: var(--primary-tint);
 }
@@ -228,6 +259,19 @@ header.scrolled .logo_scrolled {
     opacity: 1;
     pointer-events: auto;
     margin-top: -10px;
+}
+
+header.scrolled nav li {
+    margin-top: -12px;
+}
+
+header.scrolled nav ul li .dropdown {
+    gap: 18px;
+}
+
+header.scrolled nav ul li.open > .dropdown {
+    margin-top: 23px;
+    padding: 15px;
 }
 
 header.scrolled nav li a {
@@ -502,6 +546,17 @@ footer .container p, footer .container li {
     margin-bottom: 10px;
 }
 
+footer .container .box4 ul li {
+    display: inline-block;
+    display: flex;
+    margin-bottom: -5px;
+    /* margin-top: -12px; */
+}
+
+footer .container .box4 ul li a {
+    margin-top: 3px;
+}
+
 footer .container ion-icon {
     font-size: 20px;
     margin-right: 5px;
@@ -617,8 +672,6 @@ footer .legal {
         top: 90%;
     }
 
-
-
     #menu_toggle.open span:nth-child(1) {
         top: 50%;
         transform: rotate(45deg);
@@ -642,6 +695,7 @@ footer .legal {
 
     header.scrolled #menu_toggle span {
         background-color: var(--primary-tint);
+        margin-top: -5px;
     }
 
 }

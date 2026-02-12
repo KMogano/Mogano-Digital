@@ -3,146 +3,338 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Secure, scalable website design and development for SMEs and organisations. Fast, mobile-friendly, SEO-ready websites built to perform.">
-    <meta name="keywords" content="web development, web design, business website design, secure websites, SME website development, systems-based web development, website development Gauteng, website design Gauteng">
-    <link rel="stylesheet" href="">
-    <link rel="shortcut icon" href="../Images/MoganoDigitalFav(Wht).svg" type="image/x-icon">
-    <title>Website Design & Development | Mogano Digital</title>
+    <meta name="description" content="Transparent web design pricing for SMEs. Once-off websites, monthly website packages, and eCommerce solutions tailored to your budget.">
+    <link rel="stylesheet" href="../CSS/web-dev-design.css">
+    <script src="../JavaScript/main.js"></script>
+    <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zoho.com/widget?wc=siq21d25e4a847e1f3dccd1cbeb1df426be62403108fa77004ca926d7afd3d171c5" defer></script>
+    <link rel="icon" href="../Images/MoganoDigitalFav(Wht).svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="../Images/MoganoDigitalFav.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <title>Website Development | Mogano Digital</title>
 </head>
 <body>
-    <header>
-        <a href="#hero_section"><img src="../Images/MoganoDigitalLogo(Blue).svg" alt="Mogano Digital Logo"></a>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="./pricing.html">Pricing</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
+    <header id="main_header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <span class="logo_wrap">
+                        <img src="../Images/MoganoDigitalLogo(Blue).svg" alt="Mogano Digital Logo" class="defaul_logo">
+                        <img src="../Images/MoganoDigitalLogo(Wht).svg" alt="Mogano Digital Logo" class="logo_scrolled">
+                    </span>
+                </a>
+            </div>
+
+            <button id="menu_toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../HTML/about.html">About</a></li>
+                    <li class="has-dropdown"><a href="#">Services <b>▾</b></a>
+                        <ul class="dropdown">
+                            <li><a href="#" id="current">Digital & Web</a></li>
+                            <li><a href="../HTML/graphic-design-branding.html">Design & Branding</a></li>
+                            <li><a href="../HTML/print-physical-apparel.html">Print & Production</a></li>
+                            <li><a href="../HTML/print-physical-apparel.html">Apparel & Promotions</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="./HTML/portfolio.html">Portfolio</a></li> -->
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="hero">
-        <h2>Website Design & Development</h2>
-    </section>
-
-    <section>
-        <h3>Digital infrastructure Engineered for Reliability</h3>
-        <h5>
-            We don’t just build websites. We deploy secure, high-performance digital systems that protect your data and scale with your business.
-        </h5>
-    </section>
-
-    <section id="overview">
-        <p>
-            In today’s digital economy, your website is one of your most critical business systems. It is your online storefront, marketing engine, and customer engagement platform. Mogano Digital provides professional web development services in South Africa, built with a systems-first approach that prioritises security, performance, and scalability.
-            <br>
-            Unlike template-driven website builders, we design and develop secure, fast, and reliable business websites that are engineered to support long-term growth. With a background in Systems Administration and Systems Development, we focus on what happens behind the scenes — ensuring your website is stable, protected, and optimised for real-world use across South African networks.
-            <br>
-            Whether you are a start-up launching your first website, an SME upgrading an outdated site, or an organisation requiring a structured digital platform, we deliver custom website solutions that perform consistently and professionally.
-        </p>
-    </section>
-
-    <section>
-        <h5>What We Build</h5>
-        <p>We design and deploy:</p>
-        <ul>
-            <li>Business and SME websites</li>
-            <li>Professional company websites</li>
-            <li>Landing pages for campaigns and lead generation</li>
-            <li>Educational and institutional websites</li>
-            <li>Scalable website platforms with future expansion capability</li>
-        </ul>
-
-        <p>
-            Each website is developed with SEO-ready structure, clean code, and performance optimisation to ensure long-term visibility and usability.
-        </p>
-    </section>
-
-    <section id="features">
-        <div>
-            <h5>Security-First Website Development</h5>
+    <section id="hero_section">
+        <div class="container">
+            <h2>Website Design & Development</h2>
             <p>
-                All websites include SSL encryption, secure hosting configurations, and hardened protection against common vulnerabilities.
+                Transparent, flexible website solutions for growing businesses
             </p>
         </div>
-        <div>
-            <h5>SEO-Ready Website Infrastructure</h5>
+        <div class="overlay"></div>
+    </section>
+
+    <section id="info">
+        <div class="container">
             <p>
-                We implement technical SEO foundations, including clean URLs, structured layouts, and mobile optimisation to support Google ranking.
+                Mogano Digital offers structured website pricing designed to suit businesses at every stage of growth. Whether you’re a start-up, SME, school, or established organisation, our website solutions are built for performance, security, and long-term reliability.
             </p>
-        </div>
-        <div>
-            <h5>Performance & Speed Optimisation</h5>
             <p>
-                Fast-loading websites optimised for desktop and mobile users, including low-bandwidth environments.
-            </p>
-        </div>
-        <div>
-            <h5>Mobie-Responsive Design</h5>
-            <p>
-                Fully responsive layouts ensuring seamless browsing across smartphones, tablets, and desktop devices.
-            </p>
-        </div>
-        <div>
-            <h5>Scalable Website Architecture</h5>
-            <p>
-                Websites are built to grow with your business, allowing for future integrations such as e-commerce, booking systems, or client portals.
+                Choose from once-off website ownership, monthly managed website packages, or e-commerce solutions, all developed with a systems-first approach to ensure your website is fast, secure, and scalable. Our pricing is transparent and flexible, allowing you to select a solution that fits your budget and business goals.
             </p>
         </div>
     </section>
 
-    <section id="CTA">
-        <h3>Ready to Elevate Your Brand</h3>
-        <a href="./HTML/services.html">Get Started</a>
+    <section id="capabilities">
+    <div class="container capabilities-flex">
+        <div class="cap-text">
+            <h5>What We Build</h5>
+            <p>We design and deploy high-performance digital infrastructure:</p>
+            <ul class="styled-list">
+                <li>Business and SME websites</li>
+                <li>Professional company websites</li>
+                <li>Landing pages for campaigns and lead generation</li>
+                <li>Educational and institutional websites</li>
+                <li>Scalable website platforms with future expansion capability</li>
+            </ul>
+        </div>
+        <div class="cap-summary">
+            <p>
+                Each website is developed with <strong>SEO-ready structure</strong>, clean code, and performance optimisation to ensure long-term visibility and usability.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="features">
+    <div class="container feature-grid">
+        <div class="feature-card">
+            <i class="icon-lock"></i> <h5>Security-First Development</h5>
+            <p>All websites include SSL encryption, secure hosting, and hardened protection.</p>
+        </div>
+        </div>
+</section>
+
+    <section id="pricing">
+        <div class="container">
+            <div class="box">
+                <h4>Lump Sum</h4>
+                <ul>
+                    <li>Design and Development</li>
+                    <img src="../Images/checkmark-sharp.svg" alt="">
+                    <li>R300/mo Hosting</li>
+                    <img src="../Images/checkmark-sharp.svg" alt="">
+                    <li>R750 Per Additional Page</li>
+                    <img src="../Images/checkmark-sharp.svg" alt="">
+                    <li>+R700/mo Unlimited Edits Add-on</li>
+                    <img src="../Images/checkmark-sharp.svg" alt="">
+                    <li>24/7 Support</li>
+                    <img src="../Images/ban.svg" alt="">
+                    <li>Lifetime Updates</li>
+                    <img src="../Images/ban.svg" alt="">
+                </ul>
+                <div class="prices">
+                    <h5>R8k <span>+ R300/mo Hosting</span></h5>
+                    <a href="../HTML/contact.html">Get Started</a>
+                </div>
+            </div>
+            <div class="box">
+                <h4>Monthly</h4>
+                <ul>
+                    <li>Design and Development</li>
+                    <img src="../Images/white-check-mark-on-a-transparent-background-png.png" alt="">
+                    <li>Includes Hosting</li>
+                    <img src="../Images/white-check-mark-on-a-transparent-background-png.png" alt="">
+                    <li>R750 Per Additional Page</li>
+                    <img src="../Images/white-check-mark-on-a-transparent-background-png.png" alt="">
+                    <li>Unlimited Edits</li>
+                    <img src="../Images/white-check-mark-on-a-transparent-background-png.png" alt="">
+                    <li>24/7 Support</li>
+                    <img src="../Images/white-check-mark-on-a-transparent-background-png.png" alt="">
+                    <li>Lifetime Updates</li>
+                    <img src="../Images/white-check-mark-on-a-transparent-background-png.png" alt="">
+                </ul>
+                <div class="prices">
+                    <h5>R2.5k <span>Per Month</span></h5>
+                    <a href="../HTML/contact.html">Get Started</a>
+                </div>
+            </div>
+            <div class="box">
+                <h4>Ecommerce</h4>
+                <ul>
+                    <li>Custom Shopify Store</li>
+                    <img src="../Images/checkmark-sharp.svg" alt="">
+                    <li>Configure Any and All Apps</li>
+                    <img src="../Images/checkmark-sharp.svg" alt="">
+                    <li>Integrated Shipping</li>
+                    <img src="../Images/checkmark-sharp.svg" alt="">
+                    <li>Shopify Tutorial Walkthrough</li>
+                    <img src="../Images/checkmark-sharp.svg" alt="">
+                    <li>Fully Editable In Shopify CMS</li>
+                    <img src="../Images/checkmark-sharp.svg" alt="">
+                    <li>24/7 Support</li>
+                    <img src="../Images/ban.svg" alt="">
+                    <li>+R700/mo Unlimited Edits Add-on</li>
+                    <img src="../Images/ban.svg" alt="">
+                </ul>
+                <div class="prices">
+                    <h5>R30k <span>starting</span></h5>
+                    <a href="../HTML/contact.html">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lump">
+        <div class="container">
+            <h3>Lump Sum Website Packages</h3>
+            <p>
+                <i>Once-off payment. You own the website.</i><br>Ideal for businesses that want full ownership with no monthly commitment.
+            </p>
+
+            <div class="cards">
+                <div class="box">
+                    <h5>Starter</h5>
+                    <p>Best for start-ups and small organisations</p>
+                    <ul>
+                        <li>Up to 3 pages</li>
+                        <li>Mobile-responsive design</li>
+                        <li>Basic SEO setup</li>
+                        <li>Social media links</li>
+                        <li>1 round of revisions</li>
+                    </ul>
+                    <h5 class="price">R8,000</h5>
+                </div>
+                <div class="box">
+                    <h5>Standard Business</h5>
+                    <p>Best for established SMEs and schools</p>
+                    <ul>
+                        <li>Up to 8 pages</li>
+                        <li>Mobile-responsive design</li>
+                        <li>Contact & enquiry forms</li>
+                        <li>Enhanced SEO setup</li>
+                        <li>Google Maps integration</li>
+                        <li>2 rounds of revisions</li>
+                    </ul>
+                    <h5 class="price">R12,000</h5>
+                </div>
+                <div class="box">
+                    <h5>Custom Website</h5>
+                    <p>For businesses with specific functionality requirements</p>
+                    <a href="../HTML/contact.html">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process">
+        <div class="container">
+            <div class="process_header">
+                <h5>Our Professional Delivery Process</h5>
+                <p>Technical precision takes time. Here is how we ensure your digital infrastructure is built to last.</p>
+            </div>
+            <div class="process_grid">
+                <div class="process_step">
+                    <div class="img_wrapper">
+                        <img src="../Images/search-sharp.svg" alt="">
+                    </div>
+                    <h5>Discovery & Briefing</h5>
+                    <span class="timeline">Days 1-3</span>
+                    <p class="phase_desc">
+                        <strong>The "Green Light" Phase:</strong> Once the deposit is paid and your content (logo, text, images) is received, we conduct a technical consultation to align on your requirements and project goals.
+                    </p>
+                    <p class="milestone"><i>Key Milestone:</i> Finalise Project Brief</p>
+                </div>
+                <div class="process_step">
+                    <div class="img_wrapper">
+                        <img src="../Images/settings-sharp.svg" alt="">
+                    </div>
+                    <h5>Infrastructure & UI Design</h5>
+                    <span class="timeline">Days 4-7</span>
+                    <p class="phase_desc">
+                        <strong>The "Foundation" Phase:</strong> We configure your hosting environment, secure your domain, and design the visual layout. This stage ensures the "look and feel" is approved before we begin the technical build.
+                    </p>
+                    <p class="milestone"><i>Key Milestone:</i> Design & Layout Approval</p>
+                </div>
+                <div class="process_step">
+                    <div class="img_wrapper">
+                        <img src="../Images/shield-check.svg" alt="">
+                    </div>
+                    <h5>Development</h5>
+                    <span class="timeline">Days 8-15</span>
+                    <p class="phase_desc">
+                        <strong>The "Build" Phase:</strong> We turn the approved design into a functional, high-performance system. This includes full mobile optimization and setting up our signature "Security-First" backend infrastructure.
+                    </p>
+                    <p class="milestone"><i>Key Milestone:</i> Functional Website Alpha</p>
+                </div>
+                <div class="process_step">
+                    <div class="img_wrapper">
+                        <img src="../Images/rocket-sharp.svg" alt="">
+                    </div>
+                    <h5>Technical QA & Deployment</h5>
+                    <span class="timeline">Days 16-20</span>
+                    <p class="phase_desc">
+                        <strong>The "Launch" Phase:</strong> We conduct rigorous bug testing, SEO indexing, and security audits. The process concludes with a 30-minute training session to hand over your new digital asset.
+                    </p>
+                    <p class="milestone"><i>Key Milestone:</i> Officaial Site Launch & Handover</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="note">
+        <div class="container">
+            <p>
+                <i>"<span>Note:</span> Timelines are calculated from the date all project assets (text, images, and branding) are received. As a boutique agency focused on quality, we limit the number of active projects we take on to ensure your system receives the technical attention it deserves."</i>
+            </p>
+        </div>
     </section>
 
     <footer>
-        <div id="boxes">
-            <div class="box1">
-                <img src="../Images/MoganoDigitalLogo(Wht).svg" alt="">
-                <p>Professional digital, print, and branding solutions for ambitious organizations.</p>
-                <div class="socials">
-                    <img src="" alt="">
-                    <img src="" alt="">
+        <div class="container">
+            <div id="boxes">
+                <div class="box1">
+                    <a href="../index.html"><img src="../Images/MoganoDigitalLogo(Wht).svg" alt="" class="logo"></a>
+                    <p>Professional digital, print, and branding solutions for ambitious organizations.</p>
+                </div>
+
+                <div class="box2">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../HTML/about.html">About Us</a></li>
+                        <li><a href="../HTML/services.html">Services</a></li>
+                        <!-- <li><a href="./portfolio.html">Our Portfolio</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="box3">
+                    <h4>Core Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design & Development</a></li>
+                        <li><a href="../HTML/print-physical-apparel.html">Print & Production</a></li>
+                        <li><a href="../HTML/graphic-design-branding.html">Corporate Branding</a></li>
+                        <li><a href="../HTML/print-physical-apparel.html">Apparel & Branding</a></li>
+                    </ul>
+                </div>
+
+                <div class="box4">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><ion-icon name="logo-whatsapp"></ion-icon><a href="https://wa.me/27663085128">066 308 5128</a></li>
+                        <!-- <li><ion-icon name="call"></ion-icon><a href="tel:+27 10111">10111</a></li> -->
+                        <li><ion-icon name="mail"></ion-icon><a href="mailto:info@moganodigital.co.za">info@moganodigital.co.za</a></li>
+                        <li><ion-icon name="location-sharp"></ion-icon>Gauteng</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="box2">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Our Portfolio</a></li>
-                </ul>
-            </div>
-
-            <div class="box3">
-                <h4>Core Services</h4>
-                <ul>
-                    <li><a href="">Web Design & Development</a></li>
-                    <li><a href="">Print & Production</a></li>
-                    <li><a href="">Corporate Branding</a></li>
-                    <li><a href="">Apparel & Branding</a></li>
-                </ul>
-            </div>
-
-            <div class="box4">
-                <h4>Contact Info</h4>
-                <ul>
-                    <li>Location</li>
-                    <li>Email</li>
-                    <li>WhatsApp</li>
-                </ul>
+            <div class="legal">
+                <p>&commat; 2026 Mogano Digital. All Rights Reserved</p>
             </div>
         </div>
 
-        <div class="legal">
-            <p>&commat; 2026 Mogano Digital. All Rights Reserved</p>
+        <div id="mobile">
+            <a href="../index.html"><img src="../Images/MoganoDigitalLogo(Wht).svg" alt="" class="logo"></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/about.html">About Us</a></li>
+                <li><a href="../HTML/services.html">Services</a></li>
+                <!-- <li><a href="./portfolio.html">Our Portfolio</a></li> -->
+                <li><a href="../HTML/contact.html">Contact</a></li>
+            </ul>
+
+            <div class="legal">
+                <p>&commat; 2026 Mogano Digital. All Rights Reserved</p>
+            </div>
         </div>
     </footer>
 
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

@@ -4,127 +4,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore Mogano Digital’s full range of services including web development, graphic design, printing, embroidery, and branded apparel.">
-    <link rel="stylesheet" href="">
-    <link rel="shortcut icon" href="../Images/MoganoDigitalFav(Wht).svg" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/services.css">
+    <script src="../JavaScript/main.js"></script>
+    <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zoho.com/widget?wc=siq21d25e4a847e1f3dccd1cbeb1df426be62403108fa77004ca926d7afd3d171c5" defer></script>
+    <link rel="icon" href="../Images/MoganoDigitalFav(Wht).svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="../Images/MoganoDigitalFav.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
     <title>Services | Mogano Digital</title>
 </head>
 <body>
-    <header>
-        <a href="#hero_section"><img src="../Images/MoganoDigitalLogo(Blue).svg" alt="Mogano Digital Logo"></a>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="./pricing.html">Pricing</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
+    <header id="main_header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <span class="logo_wrap">
+                        <img src="../Images/MoganoDigitalLogo(Blue).svg" alt="Mogano Digital Logo" class="defaul_logo">
+                        <img src="../Images/MoganoDigitalLogo(Wht).svg" alt="Mogano Digital Logo" class="logo_scrolled">
+                </span>
+                </a>
+            </div>
+
+            <button id="menu_toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../HTML/about.html">About</a></li>
+                    <li class="has-dropdown"><a href="#" id="current">Services <b>▾</b></a>
+                        <ul class="dropdown">
+                            <li><a href="../HTML/web-dev-design.html">Digital & Web</a></li>
+                            <li><a href="../HTML/graphic-design-branding.html">Design & Branding</a></li>
+                            <li><a href="../HTML/print-physical-apparel.html">Print & Production</a></li>
+                            <li><a href="../HTML/print-physical-apparel.html">Apparel & Promotions</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="../HTML/portfolio.html">Portfolio</a></li> -->
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <h2>Our Services</h2>
-        <p>Creative Solutions for Your Business</p>
+    <section id="hero_section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Creative Solutions for Your Business</p>
+            <br>
+        </div>
     </section>
 
     <section id="intro">
-        <p>
-            Mogano Digital provides integrated digital, print, and branding solutions designed for SMEs, schools, and organisations across South Africa. Select a service below to learn more.
-        </p>
+        <div class="container">
+            <p>
+                Mogano Digital provides integrated digital, print, and branding solutions designed for SMEs, schools, and organisations across South Africa. Select a service below to learn more.
+            </p>
+        </div>
     </section>
 
-    <section>
-        <div>
-            <h4>Digital & Web</h4>
-            <ul>
-                <li>Website design & Development</li>
-                <li>Web Hosting</li>
-                <li>Website Updates & Support</li>
-                <li>SEO & Digital Strategy</li>
-            </ul>
-            <a href="./web_dev+design.html">Lear More</a>
-        </div>
+    <section id="services">
+        <div class="container">
+            <div class="box">
+                <div class="text">
+                    <h5>Digital & Web</h5>
+                    <ul>
+                        <li>Website design & Development</li>
+                        <li>Web Hosting</li>
+                        <li>Website Updates & Support</li>
+                        <li>SEO & Digital Strategy</li>
+                    </ul>
+                </div>
+                <div class="pic">
+                    <img src="../Images/Design_pic.png" alt="">
+                </div>
+                <a href="../HTML/web-dev-design.html">Lear More</a>
+            </div>
 
-        <div>
-            <h4>Design & Branding</h4>
-            <ul>
-                <li>Logo Design</li>
-                <li>Corporate Identity</li>
-                <li>Marketing Material</li>
-            </ul>
-            <a href="./graphic_design+branding.html">Learn More</a>
-        </div>
+            <div class="box">
+                <div class="text">
+                    <h5>Design & Branding</h5>
+                    <ul>
+                        <li>Logo Design</li>
+                        <li>Corporate Identity</li>
+                        <li>Marketing Material</li>
+                    </ul>
+                </div>
+                <div class="pic">
+                    <img src="../Images/Design&Branding.png" alt="">
+                </div>
+                <a href="../HTML/graphic-design-branding.html">Learn More</a>
+            </div>
 
-        <div>
-            <h4>Print & Production</h4>
-            <ul>
-                <li>Business Cards & Flyers</li>
-                <li>Brouchures & Banners</li>
-                <li>Stickers & Labels</li>
-            </ul>
-            <a href="./print+physical_apparel.html">Learn More</a>
-        </div>
+            <div class="box">
+                <div class="text">
+                    <h5>Print & Production</h5>
+                    <ul>
+                        <li>Business Cards & Flyers</li>
+                        <li>Brochures & Banners</li>
+                        <li>Stickers & Labels</li>
+                    </ul>
+                </div>
+                <div class="pic">
+                    <img src="../Images/Print_pic.png" alt="">
+                </div>
+                <a href="../HTML/print-physical-apparel.html">Learn More</a>
+            </div>
 
-        <div>
-            <h4>Apparel & Promotional</h4>
-            <ul>
-                <li>T-shirt & Cap Branding</li>
-                <li>Embroidery</li>
-                <li>Custom Gifts</li>
-            </ul>
-            <a href="./print+physical_apparel.html">Learn More</a>
+            <div class="box">
+                <div class="text">
+                    <h5>Apparel & Promotional</h5>
+                    <ul>
+                        <li>T-shirt & Cap Branding</li>
+                        <li>Embroidery</li>
+                        <li>Custom Gifts</li>
+                    </ul>
+                </div>
+                <div class="pic">
+                    <img src="../Images/Brand_pic.png" alt="">
+                </div>
+                <a href="../HTML/print-physical-apparel.html">Learn More</a>
+            </div>
         </div>
     </section>
 
     <section id="CTA">
-        <h3>Ready to Elevate Your Brand</h3>
-        <a href="./HTML/services.html">Get Started</a>
+        <div class="container">
+            <h4>Ready to Elevate Your Brand?</h4>
+            <a href="../HTML/contact.html">Get Started</a>
+        </div>
     </section>
 
     <footer>
-        <div id="boxes">
-            <div class="box1">
-                <img src="../Images/MoganoDigitalLogo(Wht).svg" alt="">
-                <p>Professional digital, print, and branding solutions for ambitious organizations.</p>
-                <div class="socials">
-                    <img src="" alt="">
-                    <img src="" alt="">
+        <div class="container">
+            <div id="boxes">
+                <div class="box1">
+                    <img src="../Images/MoganoDigitalLogo(Wht).svg" alt="">
+                    <p>Professional digital, print, and branding solutions for ambitious organizations.</p>
+                </div>
+
+                <div class="box2">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../HTML/about.html">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <!-- <li><a href="../HTML/portfolio.html">Our Portfolio</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="box3">
+                    <h4>Core Services</h4>
+                    <ul>
+                        <li><a href="../HTML/web-dev-design.html">Web Design & Development</a></li>
+                        <li><a href="../HTML/print-physical-apparel.html">Print & Production</a></li>
+                        <li><a href="../HTML/graphic-design-branding.html">Corporate Branding</a></li>
+                        <li><a href="../HTML/print-physical-apparel.html">Apparel & Branding</a></li>
+                    </ul>
+                </div>
+
+                <div class="box4">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><ion-icon name="logo-whatsapp"></ion-icon><a href="https://wa.me/27663085128">066 308 5128</a></li>
+                            <li><ion-icon name="call"></ion-icon><a href="tel:+27 10111">10111</a></li>
+                            <li><ion-icon name="mail"></ion-icon><a href="mailto:info@moganodigital.co.za">info@moganodigital.co.za</a></li>
+                            <li><ion-icon name="location-sharp"></ion-icon>Gauteng</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="box2">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Our Portfolio</a></li>
-                </ul>
-            </div>
-
-            <div class="box3">
-                <h4>Core Services</h4>
-                <ul>
-                    <li><a href="">Web Design & Development</a></li>
-                    <li><a href="">Print & Production</a></li>
-                    <li><a href="">Corporate Branding</a></li>
-                    <li><a href="">Apparel & Branding</a></li>
-                </ul>
-            </div>
-
-            <div class="box4">
-                <h4>Contact Info</h4>
-                <ul>
-                    <li>Location</li>
-                    <li>Email</li>
-                    <li>WhatsApp</li>
-                </ul>
+            <div class="legal">
+                <p>&commat; 2026 Mogano Digital. All Rights Reserved</p>
             </div>
         </div>
-
-        <div class="legal">
-            <p>&commat; 2026 Mogano Digital. All Rights Reserved</p>
+        
+        <div id="mobile">
+            <a href="../index.html"><img src="../Images/MoganoDigitalLogo(Wht).svg" alt="" class="logo"></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../HTML/services.html">Services</a></li>
+                <!-- <li><a href="./portfolio.html">Our Portfolio</a></li> -->
+                <li><a href="../HTML/contact.html">Contact</a></li>
+            </ul>
+            <div class="legal">
+                <p>&commat; 2026 Mogano Digital. All Rights Reserved</p>
+            </div>
         </div>
     </footer>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

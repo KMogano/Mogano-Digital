@@ -5,167 +5,243 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Integrated web development, branding, printing, and apparel services for SMEs, schools, and organisations across Gauteng and South Africa.">
     <meta name="keywords" content="web development South Africa, business website design, secure websites, SME website development, systems-based web development">
-    <link rel="stylesheet" href="">
-    <link rel="shortcut icon" href="./Images/MoganoDigitalFav(Wht).svg" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/homestyles.css">
+    <script src="./JavaScript/main.js"></script>
+    <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zoho.com/widget?wc=siq21d25e4a847e1f3dccd1cbeb1df426be62403108fa77004ca926d7afd3d171c5" defer></script>
+    <link rel="icon" href="./Images/MoganoDigitalFav(Wht).svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="../Images/MoganoDigitalFav.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
     <title>Home | Mogano Digital</title>
 </head>
 <body>
-    <header>
-        <a href="#hero_section"><img src="./Images/MoganoDigitalLogo(Blue).svg" alt="Mogano Digital Logo"></a>
-        <ul>
-            <li><a href="#hero_section">Home</a></li>
-            <li><a href="./HTML/about.html">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="./HTML/pricing.html">Pricing</a></li>
-            <li><a href="./HTML/portfolio.html">Portfolio</a></li>
-            <li><a href="./HTML/contact.html">Contact</a></li>
-        </ul>
+    <header id="main_header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <span class="logo_wrap">
+                        <img src="../Images/MoganoDigitalLogo(Blue).svg" alt="Mogano Digital Logo" class="defaul_logo">
+                        <img src="../Images/MoganoDigitalLogo(Wht).svg" alt="Mogano Digital Logo" class="logo_scrolled">
+                    </span>
+                </a>
+            </div>
+
+            <button id="menu_toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="#" id="current">Home</a></li>
+                    <li><a href="./HTML/about.html">About</a></li>
+                    <li class="has-dropdown"><a href="#">Services <b>▾</b></a>
+                        <ul class="dropdown">
+                            <li><a href="./HTML/web-dev-design.html">Digital & Web</a></li>
+                            <li><a href="./HTML/graphic-design-branding.html">Design & Branding</a></li>
+                            <li><a href="./HTML/print-physical-apparel.html">Print & Production</a></li>
+                            <li><a href="./HTML/print-physical-apparel.html">Apparel & Promotions</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="./HTML/portfolio.html">Portfolio</a></li> -->
+                    <li><a href="./HTML/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="hero_section">
-        <h2>
-            Design. Print. Brand.
-        </h2>
-        <p>
-            Professional digital, print and breanding solutions for entities ready to make a lasting impression
-        </p>
-        <a href="./HTML/quote.html">Get A Quote</a>
-        <a href="./HTML/services.html">View Our Services</a>
+        <div class="container">
+            <div class="text">
+                <h2>
+                    Design. Print. Brand.
+                </h2>
+                <p>
+                    Professional digital, print and breanding solutions for entities ready <br> to make a lasting impression
+                </p>
+                <ul>
+                    <a href="./HTML/contact.html">Get A Quote</a>
+                    <a href="./HTML/services.html">View Our Services</a>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="overlay"></div>
     </section>
 
 
-    <section id="What_We_Do">
-        <h3>
+    <section id="what_we_do">
+        <div class="container">
+            <h3>
             What We Do
-        </h3>
-        <div class="design">
-            <img src="" alt="">
-            <h4>
-                Design
-            </h4>
-            <p>
-                Elevate your brand with professional logo creation, full identity development, and modern, responsive websites. We create cohesive visuals that help your business communicate with clarity and authority.
-            </p>
-        </div>
+            </h3>
+            <div class="box">
+                <div class="design">
+                    <a href="./HTML/web-dev-design.html">
+                        <img src="./Images/WebDesign_pic.png" alt="">
+                        <h5>Design</h5>
+                        <p>
+                            Elevate your brand with professional logo creation, full identity development, and modern, responsive websites. We create cohesive visuals that help your business communicate with clarity and authority.
+                        </p>
+                    </a>
+                </div>
+            </div>
 
-        <div class="print">
-            <img src="" alt="">
-            <h4>Print</h4>
-            <p>
-                High-quality print solutions for professional impact. From premium business cards and marketing flyers to custom apparel and promotional items, we deliver durable, high-standard production for SMEs, schools, and organizations.
-            </p>
-        </div>
+            <div class="box">
+                <div class="print">
+                    <a href="./HTML/print-physical-apparel.html">
+                        <img src="./Images/Print_pic.png" alt="">
+                        <h5>Print</h5>
+                        <p>
+                            High-quality print solutions for professional impact. From premium business cards and marketing flyers to custom apparel and promotional items, we deliver durable, high-standard production for SMEs, schools, and organizations.
+                        </p>
+                    </a>
+                </div>
+            </div>
 
-        <div class="Brand">
-            <img src="" alt="">
-            <h4>Brand</h4>
-            <p>
-                End-to-end solutions to build a recognizable presence. We handle everything from concept design to final execution, ensuring your brand remains consistent, builds trust, and stands out across both digital and physical platforms.
-            </p>
+            <div class="box">
+                <div class="Brand">
+                    <a href="./HTML/graphic-design-branding.html">
+                        <img src="./Images/Brand_pic.png" alt="">
+                        <h5>Brand</h5>
+                        <p>
+                            End-to-end solutions to build a recognizable presence. We handle everything from concept design to final execution, ensuring your brand remains consistent, builds trust, and stands out across both digital and physical platforms.
+                        </p>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="Why">
-        <h3>Why Mogano Digital</h3>
-        <div>
-            <img src="" alt="">
-            <p>One-stop branding partner</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Affordable pricing</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Fast turnaround & local support</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Youth, black, female-owned business</p>
+    <section id="why">
+        <div class="container">
+            <h4>Why Mogano Digital</h4>
+            <div>
+                <img src="./Images/OneStop.png" alt="">
+                <p>One-stop branding partner</p>
+            </div>
+            <div>
+                <img src="./Images/Affordable.png" alt="">
+                <p>Affordable pricing</p>
+            </div>
+            <div>
+                <img src="./Images/FastTurnaround.png" alt="">
+                <p>Fast turnaround & local support</p>
+            </div>
+            <div>
+                <img src="./Images/YouthOwned.png" alt="">
+                <p>Youth, black, female-owned business</p>
+            </div>
         </div>
     </section>
 
-    <section id="Services">
-        <h3>Features Services</h3>
-        <div>
-            <img src="" alt="">
-            <h4>Custom Web Solutions</h4>
-            <p>
-                From professional starter sites to advanced business platforms, we build mobile-responsive websites designed to convert visitors into clients
-            </p>
-            <a href="./HTML/pricing.html">View Pricing Packages</a>
-        </div>
+    <section id="services">
+        <div class="container">
+            <h3>Features Services</h3>
+            <div class="box">
+                <img src="./Images/Custom Solutions.png" alt="">
+                <h5>Custom Web Solutions</h5>
+                <p>
+                    From professional starter sites to advanced business platforms, we build mobile-responsive websites designed to convert visitors into clients
+                </p>
+                <a href="./HTML/web-dev-design.html">View Pricing Packages</a>
+            </div>
 
-        <div>
-            <img src="" alt="">
-            <h4>Professional Stationery</h4>
-            <p>
-                Make a lasting first impression with premium business cards, brochures, and flyers that reflect the quality of your organization.
-            </p>
-            <a href="./HTML/quote.html">Get a Print Quote</a>
-        </div>
+            <div class="box">
+                <img src="./Images/Stationery.png" alt="">
+                <h5>Professional Stationery</h5>
+                <p>
+                    Make a lasting first impression with premium business cards, brochures, and flyers that reflect the quality of your organization.
+                </p>
+                <a href="./HTML/contact.html">Get a Print Quote</a>
+            </div>
 
-        <div>
-            <img src="" alt="">
-            <h4>Apparel & Promotional</h4>
-            <p>
-                High-standard embroidery and heat-press solutions for school uniforms, corporate wear, and promotional gifting.
-            </p>
-            <a href="./HTML/printing+branding.html">Explore Merchandise</a>
+            <div class="box">
+                <img src="./Images/Promotional.png" alt="">
+                <h5>Apparel & Promotional</h5>
+                <p>
+                    High-standard embroidery and heat-press solutions for school uniforms, corporate wear, and promotional gifting.
+                </p>
+                <a href="./HTML/printing+branding.html">Explore Merchandise</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="badges">
+        <div class="container">
+            <ul>
+                <li>🛡 B-BBEE Level 1 Contributor</li>
+                <li>🇿🇦 Proudly South African</li>
+            </ul>
         </div>
     </section>
 
     <section id="CTA">
-        <h3>Ready to Elevate Your Brand</h3>
+        <h4>Ready to Elevate Your Brand?</h4>
         <a href="./HTML/services.html">Get Started</a>
     </section>
 
     <footer>
-        <div id="boxes">
-            <div class="box1">
-                <a href="#hero_section"><img src="./Images/MoganoDigitalLogo(Wht).svg" alt=""></a>
-                <p>Professional digital, print, and branding solutions for ambitious organizations.</p>
-                <div class="socials">
-                    <img src="" alt="">
-                    <img src="" alt="">
+        <div class="container">
+            <div id="boxes">
+                <div class="box1">
+                    <a href="#hero_section"><img src="../Images/MoganoDigitalLogo(Wht).svg" alt="" class="logo"></a>
+                    <p>Professional digital, print, and branding solutions for ambitious organizations.</p>
+                </div>
+
+                <div class="box2">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero_section">Home</a></li>
+                        <li><a href="./HTML/about.html">About Us</a></li>
+                        <li><a href="./HTML/services.html">Services</a></li>
+                        <!-- <li><a href="./portfolio.html">Our Portfolio</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="box3">
+                    <h4>Core Services</h4>
+                    <ul>
+                        <li><a href="./web-dev-design.html">Web Design & Development</a></li>
+                        <li><a href="./print-physical-apparel.html">Print & Production</a></li>
+                        <li><a href="./graphic-design-branding.html">Corporate Branding</a></li>
+                        <li><a href="./print-physical-apparel.html">Apparel & Branding</a></li>
+                    </ul>
+                </div>
+
+                <div class="box4">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><ion-icon name="logo-whatsapp"></ion-icon><a href="https://wa.me/27663085128">066 308 5128</a></li>
+                        <!-- <li><ion-icon name="call"></ion-icon><a href="tel:+27 10111">10111</a></li> -->
+                        <li><ion-icon name="mail"></ion-icon><a href="mailto:info@moganodigital.co.za">info@moganodigital.co.za</a></li>
+                        <li><ion-icon name="location-sharp"></ion-icon>Gauteng</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="box2">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#hero_section">Home</a></li>
-                    <li><a href="./HTML/about.html">About Us</a></li>
-                    <li><a href="./HTML/services.html">Services</a></li>
-                    <li><a href="./HTML/pricing.html">Pricing</a></li>
-                    <li><a href="./HTML/portfolio.html">Our Portfolio</a></li>
-                </ul>
-            </div>
-
-            <div class="box3">
-                <h4>Core Services</h4>
-                <ul>
-                    <li><a href="./HTML/web_dev+design.html">Web Design & Development</a></li>
-                    <li><a href="./HTML/graphic_design+branding.html">Print & Production</a></li>
-                    <li><a href="./HTML/print+physical_apparel.html">Corporate Branding</a></li>
-                    <li><a href="./HTML/graphic_design+branding.html">Apparel & Branding</a></li>
-                </ul>
-            </div>
-
-            <div class="box4">
-                <h4>Contact Info</h4>
-                <ul>
-                    <li>Location</li>
-                    <li>Email</li>
-                    <li>WhatsApp</li>
-                </ul>
+            <div class="legal">
+                <p>&commat; 2026 Mogano Digital. All Rights Reserved</p>
             </div>
         </div>
 
-        <div class="legal">
-            <p>&commat; 2026 Mogano Digital. All Rights Reserved</p>
+        <div id="mobile">
+            <a href="../index.html"><img src="../Images/MoganoDigitalLogo(Wht).svg" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#hero_section">Home</a></li>
+                <li><a href="./HTML/about.html">About Us</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <!-- <li><a href="./portfolio.html">Our Portfolio</a></li> -->
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="legal">
+                <p>&commat; 2026 Mogano Digital. All Rights Reserved</p>
+            </div>
         </div>
     </footer>
     
+
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

@@ -4,6 +4,37 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("menu_toggle");
     const navMenu = document.getElementById("nav_menu");
 
+
+    /* ========= Dropdown ========= */ 
+    document.querySelectorAll("nav li.has-dropdown").forEach(item => {
+        let closeTimeout;
+
+        const openMenu = () => {
+            clearTimeout(closeTimeout);
+            item.classList.add("open");
+        };
+
+        const closeMenu = () => {
+            closeTimeout = setTimeout(() => {
+                item.classList.remove("open");
+            }, 150);
+        };
+
+        item.addEventListener("mouseenter", openMenu);
+        item.addEventListener("mouseleave", closeMenu);
+
+        const link = item.querySelector("a");
+        if (link) {
+            link.addEventListener("click", (e) => {
+                if (window.innerWidth <= 992){
+                    e.preventDefault();
+                    item.classList.toggle("open");
+                }
+            });
+        }
+    });
+
+
     /* ===== Scroll Header ===== */
     if (header) {
         window.addEventListener("scroll", function() {
