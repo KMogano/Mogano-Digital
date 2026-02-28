@@ -698,7 +698,7 @@ footer .legal {
         flex-direction: column;
         text-align: center; */
         padding: 100px 0;
-        /* height: calc(100vh + 30px); */
+        height: calc(100vh + 100px);
     }
 
     /* #contact-section .contact-form select option {
