@@ -290,7 +290,7 @@ header.scrolled nav li a:hover, a:active {
 #hero_section {
     padding: 80px 0;
     background-color: var(--primary-base);
-    background-image: url("../Images/home_hero.png");
+    background-image: url("../Images/home_hero.webp");
     height: 500px;
 }
 

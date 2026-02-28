@@ -308,7 +308,7 @@ header.scrolled nav li a:hover, a:active {
     justify-content: center;
     padding-left: 50px;
     color: var(--primary-tint);
-    background: linear-gradient(rgba(0, 87, 179, 0.619), rgba(0, 87, 179, 0.67)), url("../Images/Design&Branding.png") center/cover;
+    background: linear-gradient(rgba(0, 87, 179, 0.619), rgba(0, 87, 179, 0.67)), url("../Images/Design&Branding.webp") center/cover;
 }
 
 
