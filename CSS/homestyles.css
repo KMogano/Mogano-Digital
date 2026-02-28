@@ -827,3 +827,45 @@ footer .legal {
         font-size: 1.6rem;
     }
 }
+
+@media (max-width: 500px) {
+    #hero_section {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    #hero_section .overlay {
+        height: 415px;
+    }
+    
+    #hero_section .container ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto 0 auto;
+    }
+
+    #hero_section .container ul a {
+        width: 100%;
+        text-align: center;
+    }
+
+    #what_we_do .box {
+        width: 100%;
+    }
+
+    #why .container {
+        width: 90%;
+    }
+
+    #services .box {
+        width: 100%;
+    }
+
+    #CTA {
+        width: 90%;
+        margin: 100px auto;
+    }
+}

@@ -710,70 +710,16 @@ footer .legal {
     h4 {
         font-size: 1.6rem;
     }
+}
 
-    #about .container {
-        display: grid;
-        grid-template-columns: 1fr;
+@media (max-width: 600px) {
+    #hero_section {
+        height: 20vh;
+        padding: 20px;
     }
 
-    #about h5, #about h2, #about p, #about img {
-        grid-column: 1/-1;
-    }
-
-    #about img {
-        width: 50%;
-        justify-self: center;
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-    #us {
-        background-color: var(--grey-tint);
-        padding: 70px 0 40px 0;
-    }
-
-    #us .container {
-        flex-direction: column;
-        width: 100%;
-        margin: 0 auto;
-        background-color: var(--grey-tint);
-    }
-
-    #us .container .boxes {
-        width: 60%;
-        margin: auto;
-    }
-
-    #us .container #mission, #vision{
-        background-color: transparent;
-    }
-
-    #us .container #values {
-        background-color: transparent;
-    }
-
-    #us .container #values h5 {
-        color: var(--grey-shade);
-    }
-
-    #us .container #values ul ion-icon {
-        display: none;
-    }
-
-    #us .container ion-icon {
-        color: var(--grey-shade);
-    }
-
-    #philosophy .keys {
-        flex-direction: column;
-        width: 100%;
-        margin: 0 auto;
-        padding: 40px 0 20px 0;
-    }
-
-
-    #philosophy .boxes {
-        width: 60%;
-        margin: auto;
+    #CTA {
+        width: 90%;
+        margin: 10px auto 60px;
     }
 }

@@ -849,3 +849,32 @@ footer .legal {
         margin: auto;
     }
 }
+
+@media (max-width: 500px) {
+    #hero_section {
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    #about .container img {
+        width: 100%;
+        margin: 15px auto 0;
+    }
+
+    #us .container .boxes {
+        width: 90%;
+    }
+
+    #philosophy .main {
+        width: 90%;
+    }
+
+    #philosophy .boxes {
+        width: 90%;
+    }
+
+    #CTA {
+        width: 90%;
+        margin: 100px auto;
+    }
+}

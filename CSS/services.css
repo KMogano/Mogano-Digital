@@ -711,3 +711,9 @@ footer .legal {
         order: -1;
     }
 }
+
+@media (max-width: 700px) {
+    #CTA {
+        width: 90%;
+    }
+}

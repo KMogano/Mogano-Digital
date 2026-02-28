@@ -1016,4 +1016,8 @@ footer .legal {
     #hero_section h2 {
         font-size: 1.8rem;
     }
+
+    #process .process_step {
+        width: 100%;
+    }
 }
