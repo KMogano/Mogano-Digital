@@ -20,15 +20,33 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 150);
         };
 
+        //Desktop Hover Triggers
         item.addEventListener("mouseenter", openMenu);
         item.addEventListener("mouseleave", closeMenu);
 
         const link = item.querySelector("a");
         if (link) {
             link.addEventListener("click", (e) => {
-                if (window.innerWidth <= 992){
-                    e.preventDefault();
-                    item.classList.toggle("open");
+                // 1. Check if the link is a useless placeholder hashtag
+                const isPlaceholder = link.getAttribute("href") === "#" || link.getAttribute("href").endsWith("#");
+                
+                if (window.innerWidth <= 992) {
+                    // Mobile View Touch handling
+                    const isOpen = item.classList.contains("open");
+                    if (!isOpen) {
+                        e.preventDefault();
+                        item.classList.add("open");
+                    } else if (isPlaceholder) {
+                        // Prevent page jump if link points to #
+                        e.preventDefault();
+                    }
+                } else {
+                    // Desktop View Click Handling
+                    if (isPlaceholder) {
+                        // Prevent jumping back to the top of the page if it's a '#' placeholder
+                        e.preventDefault();
+                        console.warn("Change the href from '#' to your real URL page path!");
+                    }
                 }
             });
         }

@@ -444,8 +444,19 @@ footer .container p, footer .container li {
     margin-bottom: 10px;
 }
 
+footer .container .box4 ul li {
+    display: inline-block;
+    display: flex;
+    margin-bottom: 7px;
+    /* margin-top: -12px; */
+}
+
+footer .container .box4 ul li a {
+    margin-top: 2px;
+}
+
 footer .container ion-icon {
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 5px;
     vertical-align: middle;
 }
